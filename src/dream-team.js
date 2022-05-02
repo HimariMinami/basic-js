@@ -24,7 +24,7 @@ function createDreamTeam(members) {
       return false;
     }
     else {
-      el = el.replaceAll(" ", "");
+      el = el.replace(/\s/g, '');
       abbr.push(el[0].toUpperCase());
     }
   });
